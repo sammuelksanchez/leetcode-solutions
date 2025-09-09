@@ -13,7 +13,7 @@ class Solution(object):
         for i, num in enumerate(numbers):
             diff = target - numbers[i]
             if(diff in hashMap):
-                return(i, hashMap[diff])
+                return [i, hashMap[diff]]
             hashMap[num] = i
         return
 
