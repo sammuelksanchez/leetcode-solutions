@@ -13,7 +13,7 @@ class Solution:
             hashmap[key].append(word)
 
         # We only need the grouped values
-        return list(hashmap.values())
+        return list(hashmap.values()) [:2]
 
 solution = Solution()
 print(solution.groupAnagrams(["act","pots","tops","cat","stop","hat"]))  # Output: [0, 1]
